@@ -1,0 +1,273 @@
+*:after,
+*:before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+:active,
+:hover,
+:focus{
+    outline: 0!important;
+    outline-offset: 0;
+}
+a, 
+a:hover{
+    text-decoration: none;
+}
+a:hover{
+    color: var(--primary-color)!important;
+}
+ul,
+ol{
+  margin: 0;
+  padding: 0;
+}
+:root{
+    --primary-color:#AB2C48;
+    --secondary-color:#43121d;
+    --third-color:#f98169;
+    --white-color:white;
+    --text-color:#555;
+    --text-gray:#999;
+    --black-color:black;
+    --primary-font:'roboto', sans-serif;
+    --secondary-font:'Quicksand', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: var(--primary-font);
+    font-size: 100%;
+    font-weight: 400;
+}
+
+/*............ customize scrollbar ......................*/
+::-webkit-scrollbar{
+    width: 0.625rem;
+}
+::-webkit-scrollbar-track{
+    background: var(--white-color);
+}
+::-webkit-scrollbar-thumb{
+    background: var(--primary-color);
+}
+/*............ customize scrollbar ......................*/
+
+h1{
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 3rem;
+    color: var(--secondary-color);
+}
+
+h2{
+  font-weight: 700;
+  font-size: 2.25rem;
+  text-transform: capitalize;
+  font-family: var(--secondary-font);
+  color: var(--secondary-color);
+  line-height: 3rem;
+}
+
+h4{
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-family: var(--secondary-font);
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+  }
+
+  h5{
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-family: var(--secondary-font);
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+  }
+
+  p{
+    font-weight: 400;
+    font-size: 1rem;
+    text-transform: capitalize;
+    line-height: 1.75rem;
+     color: var(--text-color);
+    
+  }
+
+  .main-btn{
+    display: inline-block;
+    padding: 0.625rem 1.875rem;
+    line-height: 1.5625rem;
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    color: var(--white-color);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px -1px rgb(0 0 0 /19%);
+    -webkit-transition: all 0.4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    -moz-transition:  all .4s ease-out 0s;
+    transition:  all .4s ease-out 0s;
+  }
+
+  .white-btn{
+    display: inline-block;
+    padding: 0.625rem 1.875rem;
+    line-height: 1.5625rem;
+    background-color: var(--white-color);
+    border: 1px solid var(--white-color);
+    color: var(--text-color);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px -1px rgb(0 0 0 /19%);
+    -webkit-transition: all 0.4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    -moz-transition:  all .4s ease-out 0s;
+    transition:  all .4s ease-out 0s;
+  }
+
+  .main-btn:hover{
+    background-color: transparent;
+    color: var(--primary-color);
+  }
+
+  .white-btn:hover{
+    background-color: transparent;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+
+  .wrapper{
+    border-top: 8.25rem;
+    border-bottom: 8.25rem;
+  }
+
+  .text-content{
+    width: 70%;
+    margin: auto;
+  }
+
+  .counter-section h2,
+  .testimonial-section h2,
+  .book-food-text h2{
+    color: var(--white-color);
+  }
+
+  /*............ navigation strat ......................*/
+  .navigation-wrap{
+    width: 100%;
+    position: fixed; 
+    left: 0;
+    z-index: 1000;
+    -webkit-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+  }
+  .navigation-wrap .nav-item{
+    padding: 0 0.625rem;
+    transition: all 200ms linear;
+  }
+  .navbar-toggler:focus{
+    border: unset;
+    outline: unset;
+    box-shadow: none;
+
+  }
+  .nav-link{
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color: var(--primary-color);
+  }
+  .navigation-wrap .main-btn{
+    padding: 5px;
+  }
+  /*............ navigation end ......................*/
+
+   /*............ top-banner......................*/
+   .top-banner{
+    background: url(../images/download.jpeg) no-repeat center;
+    background-size: cover;
+    padding: 16.875rem 0 9.375rem;
+   }
+    /*............ top-banner......................*/
+
+    /*............ slider......................*/
+    .slider-section{
+      background-color: var(--text-gray);
+    }
+    .slider-section .carousel-inner .carousel-item img{
+      width: 100%;
+      height: 65vh;
+    }
+  .carousel-control-next-icon{
+      background-color: #AB2C48;
+    }
+    .carousel-control-prev-icon{
+      background-color: #AB2C48;
+    }
+
+    .product-area .row .card{
+      box-shadow: 0 60px 80px rgba(0,0,0,0.60), 0 45px 26px rgba(0,0,0,0.14);
+    }
+    /*............slider......................*/
+
+
+    /*............sidebar......................*/
+    .sidebar-area .row .list-group button:hover{
+        background-color: #f98169;
+        text-align: center;
+    }
+    .sidebar-area .row .list-group .first{
+       background-color: #AB2C48;
+       color: #baa7f0;
+       font-size: 20px;
+    }
+    .sidebar-area .row .list-group .first:hover{
+        background-color: #AB2C48;
+    }
+    .sidebar-area .row .d-flex img{
+      border-radius: 50%;
+    }  
+    /*............sidebar......................*/
+    
+  
+    /*............sidebar......................*/
+    .article-area{
+      background-color: var(--secondary-color);
+    }
+    /*............sidebar......................*/
+
+
+    /*............Footer......................*/
+    footer{
+      background-color: var(--secondary-color);
+    }
+    footer .row ul li{
+      list-style-type: none;
+    }
+    footer .row ul li a{
+      text-decoration: none;
+      color: #baa7f0;
+    }
+    footer .row ul li a:hover{
+      padding-left: 10px;
+    }
+    footer .pagination .page-item .page-link{
+      background-color: #8b2c19;
+      color: #baa7f0;
+    }
+
+    .main-footer{
+      background-color: rgba(0, 0, 0, 0.555);
+    }
+    .main-footer a{
+      color: #AB2C48;
+    }
+    /*............Footer......................*/
